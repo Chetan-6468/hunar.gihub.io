@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Transformative Course Experience - Hunar Intern</title>
+		<link rel="icon" href="images/logo1.png" type="image/x-icon">
+
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+        color: #333;
+    }
+
+    header {
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        padding: 50px 10px;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2em;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    header p {
+        margin: 10px 0 0;
+        font-size: 1.2em;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px; /* Adjust the maximum width as needed */
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    section {
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        color: #007bff;
+        font-size: 1.8em;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    p {
+        line-height: 1.6;
+        font-size: 1.1em;
+    }
+
+    #apply-now .cta-button {
+        display: inline-block;
+        background-color: #ff5733;
+        color: #fff;
+        padding: 15px 30px;
+        text-decoration: none;
+        /* border-radius: 8px; */
+        font-size: 1.1em;
+        transition: background-color 0.3s ease;
+    }
+
+    #apply-now .cta-button:hover {
+        background-color: #e6492d;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 0.9em;
+    }
+
+    /* Animations */
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes scaleIn {
+        from {
+            transform: scale(0.8);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+    section {
+        animation: fadeInUp 1s ease;
+    }
+
+    #apply-now .cta-button {
+        animation: scaleIn 0.5s ease;
+    }
+
+    .logo-container {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999; /* Ensures the logo is on top of other elements */
+        opacity: 0.1; /* Adjust transparency as needed */
+    }
+
+    .logo-container img {
+    width: 150%; /* Make the image width responsive */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 450px; /* Set a maximum width for larger screens */
+    max-height: 550px; /* Set a maximum height for larger screens */
+}
+
+    /* Media Queries for Responsive Design */
+
+    @media only screen and (max-width: 1200px) {
+        .container {
+            width: 95%;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        header h1 {
+            font-size: 1.8em;
+        }
+
+        header p {
+            font-size: 1em;
+        }
+
+        .container {
+            padding: 15px;
+        }
+
+        section {
+            padding: 15px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        #apply-now .cta-button {
+            padding: 12px 24px;
+            font-size: 1em;
+        }
+
+        .logo-container img {
+            max-width: 200px;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        header h1 {
+            font-size: 1.5em;
+        }
+
+        header p {
+            font-size: 0.9em;
+        }
+
+        .container {
+            padding: 10px;
+        }
+
+        section {
+            padding: 10px;
+        }
+
+        h2 {
+            font-size: 1.2em;
+        }
+
+        p {
+            font-size: 0.9em;
+        }
+
+        #apply-now .cta-button {
+            padding: 10px 20px;
+            font-size: 0.9em;
+        }
+
+        .logo-container img {
+            max-width: 150px;
+        }
+    }
+
+
+.signature {
+    right: 1000px;
+    color: #777;
+    font-size: 0.9em;
+    margin-left: 1000px; 
+}
+
+.hunar {
+    margin-top: -9px;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .signature {
+        margin-left: 10px; /* Adjust the margin for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .signature {
+        position: static; /* Remove absolute positioning for smaller screens */
+        text-align: right; /* Align signature text to the right */
+        margin-top: 10px; /* Adjust the top margin for smaller screens */
+    }
+
+    .hunar {
+        margin-top: 0; /* Adjust the top margin for smaller screens */
+    }
+}
+
+</style>
+<body>
+
+    <header>
+        <h1>Discover a Transformative Course Experience</h1>
+        <p>Forge Your Ambition with Hunar Intern</p>
+    </header>
+    <div class="logo-container">
+        <!-- Place your logo image or content here -->
+        <img src="images/logo1.png" alt="Logo">
+    </div>
+    <section id="intro">
+        <div class="container">
+            <h2>We believe in empowering our team and interns to contribute ideas that shape our collective success.</h2>
+            <p>Our program goes beyond traditional learning, offering mentorship, hands-on projects, and exposure to industry leaders. Join us, and turn your potential into expertise.</p>
+        </div>
+    </section>
+
+    <section id="unleashing-potential">
+        <div class="container">
+            <h2>Unleashing Potential</h2>
+            <p>At Hunar Intern, we recognize that every individual brings a unique set of skills and aspirations. Our internship program is designed to unleash your potential by providing a platform where your ideas matter. We encourage you to contribute your insights and perspectives, allowing you to play an integral role in shaping our collective success.</p>
+        </div>
+    </section>
+
+    <section id="beyond-traditional-learning">
+        <div class="container">
+            <h2>Beyond Traditional Learning</h2>
+            <p>Gone are the days of conventional internships that offer only a glimpse into the professional world. Our program goes beyond traditional learning methodologies, offering an immersive experience that combines theoretical knowledge with practical application. You won't just learn about industry best practices; you'll actively contribute to real-world projects that make a difference.</p>
+        </div>
+    </section>
+
+    <section id="mentorship-that-matters">
+        <div class="container">
+            <h2>Mentorship that Matters</h2>
+            <p>Guidance is key to personal and professional development. That's why at Hunar Intern, we prioritize mentorship. Our experienced mentors are dedicated to nurturing your talents, providing guidance, and helping you navigate the complexities of your chosen field. You won't just be an intern; you'll be part of a mentorship community invested in your success.</p>
+        </div>
+    </section>
+
+    <section id="hands-on-projects">
+        <div class="container">
+            <h2>Hands-on Projects</h2>
+            <p>Theory only takes you so far. Our internship program is crafted to ensure you gain hands-on experience that prepares you for the challenges of the professional world. Engage in projects that require critical thinking, problem-solving, and creativity. This hands-on approach equips you with skills that are not just theoretical but practical and applicable.</p>
+        </div>
+    </section>
+
+    <section id="exposure-to-industry-leaders">
+        <div class="container">
+            <h2>Exposure to Industry Leaders</h2>
+            <p>Networking is a fundamental aspect of career growth. Through our internship program, you'll have the opportunity to connect with industry leaders and professionals. Attend workshops, webinars, and events where you can interact with experts, gaining insights that go beyond the classroom. This exposure is invaluable and sets the stage for future career opportunities.</p>
+        </div>
+    </section>
+
+    <section id="culture-of-collective-success">
+        <div class="container">
+            <h2>A Culture of Collective Success</h2>
+            <p>Success is not an individual achievement; it's a collective journey. At Hunar Intern, we foster a culture of collective success. Collaborate with a diverse and talented team where your contributions are valued. Together, we strive for excellence, celebrate achievements, and support each other in overcoming challenges.</p>
+        </div>
+    </section>
+
+    <section id="ready-to-forge-your-ambition">
+        <div class="container">
+            <h2>Ready to Forge Your Ambition?</h2>
+            <p>If you're ready to embark on a transformative internship experience, now is the time to apply to Hunar Intern. Our program is not just an opportunity; it's a gateway to unlocking your full potential. Don't settle for the ordinary; choose an internship that will shape your future.</p>
+        </div>
+    </section>
+
+    <section id="apply-now">
+        <div class="container">
+            <h2>Apply Our Courses and Embrace the Future</h2>
+            <p>Click the link below to discover new skills and grow with our easy-to-follow courses. Start learning today and open doors to endless opportunities.oin us, and turn your potential into expertise.</p>
+            <a href="index.html" target="_blank" class="cta-button"> Buy Now</a><br><br>
+            <div class="signature">
+          <img src="images/signature.png" height="60px" width="100px" alt="Logo">
+
+                <p class="hunar">Founder, CTO</p>
+
+               
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hunar Intern. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
